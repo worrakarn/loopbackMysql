@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "hb_student_tracker": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "hb_student_tracker",
+    "password": "password",
+    "name": "hb_student_tracker",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
