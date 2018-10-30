@@ -29,17 +29,9 @@ module.exports = function(Student) {
       if (err) console.log(err);
     });*/
 
-    // ยังไม่เสร็จ
-    
     Student.find({include: {
       relation: 'course', scope: {
         fields: ['name', 'description'],
-        include: {
-          relation: 'course',
-          scope: {
-            where: {course_id: 4}
-          }
-        }
       }
     }}, (err, students)=>{ 
       console.log(students);
@@ -54,6 +46,10 @@ module.exports = function(Student) {
     });*/
 
     /*Student.upsert({id: 3, first_name: 'TestTwo', last_name: 'TestTwo', email: 'Test@mail.com' }, (err, students)=>{ 
+      if (err) console.log(err);
+    });*/
+
+    /*Student.updateAttributes({last_name: 'value'}, (err, students)=>{ 
       if (err) console.log(err);
     });*/
 

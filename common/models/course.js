@@ -14,9 +14,9 @@ module.exports = function(Course) {
       console.log(Courses);
     });*/
 
-    /*Course.find({ fields: {id: true, name: true, description: true} }, (err, Courses) => {
+    Course.find({ fields: {id: true, name: true, description: true} }, (err, Courses) => {
       console.log(Courses);
-    });*/
+    });
 
     /*Course.find({include: 'Courses'}, (err, students) => {
       console.log(students);

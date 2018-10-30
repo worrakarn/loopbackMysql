@@ -15,7 +15,7 @@
       "precision": 32,
       "scale": 0
     },
-    "course": {
+    "name": {
       "type": "string",
       "generated": false,
       "required": false,
