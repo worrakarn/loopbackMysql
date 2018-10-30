@@ -35,7 +35,11 @@
     "dataSource": "db",
     "public": false
   },
-  "student": {
+  "Student": {
+    "dataSource": "hb_student_tracker",
+    "public": true
+  },
+  "Course": {
     "dataSource": "hb_student_tracker",
     "public": true
   }
