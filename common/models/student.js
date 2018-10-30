@@ -29,11 +29,19 @@ module.exports = function(Student) {
       if (err) console.log(err);
     });*/
 
+    /*
     Student.find({include: {
       relation: 'course', scope: {
-        fields: ['name', 'description'],
+        fields: ['name', 'description']
       }
     }}, (err, students)=>{ 
+      console.log(students);
+    });*/
+
+    Student.find({where: {first_name: 'Testsads'}, include: {
+      relation: 'course', scope: {
+        fields: ['name', 'description']},
+      }}, (err, students) => {
       console.log(students);
     });
 
