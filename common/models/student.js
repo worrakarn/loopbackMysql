@@ -30,10 +30,10 @@ module.exports = function(Student) {
     });*/
 
     // ยังไม่เสร็จ
-    /*
+    
     Student.find({include: {
       relation: 'course', scope: {
-        fields: [ 'frist_name', 'last_name', 'email'],
+        fields: ['name', 'description'],
         include: {
           relation: 'course',
           scope: {
@@ -43,7 +43,7 @@ module.exports = function(Student) {
       }
     }}, (err, students)=>{ 
       console.log(students);
-    });*/
+    });
 
     /*Student.destroyById(5, (err, students)=>{ 
       if (err) console.log(err);
